@@ -1,0 +1,55 @@
+Constraints
+sys:ssl=d & (libedit=e > readline=d)
+t1:logbin=e & !sqlmode=a
+t2:ndbcluster=e
+t3:innodb=e
+t4:!logformat=r & logbin=e & !sqlmode=a
+t5:!sqlmode=a
+t6:!extcharset=d & !sqlmode=a
+t7:!logformat=s & logbin=e & ndbcluster=e
+t8:innodb=e & logbin=e & !sqlmode=a
+t9:logbin=e & ndbcluster=e
+t10:!logformat=r & innodb=e & logbin=e & !sqlmode=a
+t11:!logformat=r & !extcharset=d & logbin=e & !sqlmode=a
+t12:federated=e & logbin=e & !sqlmode=a
+t13:innodb=e & !sqlmode=a
+t14:ndbcluster=e & !sqlmode=a
+t15:!logformat=s & innodb=e & logbin=e & !sqlmode=a
+t16:blackhole=e & logbin=e & ndbcluster=e
+t17:archive=e & !logformat=r & logbin=e & !sqlmode=a
+t18:federated=e & innodb=e & logbin=e & !sqlmode=a
+t19:!logformat=r & blackhole=e & logbin=e & !sqlmode=a
+t20:!logformat=s & logbin=e & ndbcluster=e & !sqlmode=a
+t21:!extcharset=d & logbin=e & !sqlmode=a
+t22:logbin=e & ndbcluster=e & !sqlmode=a
+t23:!logformat=r & logbin=e & ndbcluster=e
+t24:!extcharset=d & innodb=e & !sqlmode=a
+t25:innodb=e & logbin=e & ndbcluster=e 
+t26:innodb=e & ndbcluster=e
+t27:archive=e & innodb=e
+t28:archive=e
+t29:logbin=e
+t30:!extcharset=a
+Test Cases
+t1,t2,t3,t4,t5,t6,t7,t8,t9,t10,t11,t12,t13,t14,t15,t16,t17,t18,t19,t20,t21,t22,t23,t24,t25,t26,t27,t28,t29,t30
+Options
+logformat:r,s,m
+sqlmode:s,t,a
+extcharset:d,c,a
+innodb:e,d
+libedit:e,d
+logbin:e,d
+readline:e,d
+ndbcluster:e,d
+ssl:e,d
+archive:e,d
+blackhole:e,d
+federated:e,d
+JJ:e,d
+KK:e,d
+LL:e,d
+MM:e,d
+NN:e,d
+OO:e,d
+PP:e,d
+QQ:e,d

@@ -1,0 +1,87 @@
+Constraints
+sys:proxyhttp=e > proxy=e
+t1:ssl=e & proxyhttp=e
+t2:ssl=e
+t3:rewrite=e
+t4:headers=e
+t5:proxy=e
+t6:dav=e
+t7:casefilter=e
+t8:vhostalias=e
+t9:proxyhttp=e
+t10:proxy=e & rewrite=e & cgi=e
+t11:echo=e
+t12:ssl=e & headers=e
+t13:rewrite=e & proxy=e
+t14:ssl=e & casefilterin=e
+t15:casefilterin=e
+t16:bucketeer=e
+t17:info=e
+Test Cases
+t1,t2,t3,t4,t5,t6,t7,t8,t9,t10,t11,t12,t13,t14,t15,t16,t17,t18
+Options
+casefilter:e,d
+ssl:e,d
+dav:e,d
+echo:e,d
+rewrite:e,d
+casefilterin:e,d
+bucketeer:e,d
+info:e,d
+headers:e,d
+vhostalias:e,d
+cgi:e,d
+proxyhttp:e,d
+proxy:e,d
+JJ:e,d
+KK:e,d
+LL:e,d
+MM:e,d
+NN:e,d
+OO:e,d
+PP:e,d
+QQ:e,d
+RR:e,d
+SS:e,d
+TT:e,d
+UU:e,d
+VV:e,d
+WW:e,d
+XX:e,d
+YY:e,d
+ZZ:e,d
+AB:e,d
+BC:e,d
+CD:e,d
+DE:e,d
+EF:e,d
+FG:e,d
+GH:e,d
+HI:e,d
+IJ:e,d
+JK:e,d
+KL:e,d
+LM:e,d
+MN:e,d
+NO:e,d
+OP:e,d
+PQ:e,d
+QR:e,d
+RS:e,d
+ST:e,d
+TU:e,d
+UV:e,d
+VW:e,d
+WX:e,d
+XY:e,d
+YZ:e,d
+ZA:e,d
+AC:e,d
+BD:e,d
+CE:e,d
+DF:e,d
+FG:e,d
+GH:e,d
+HI:e,d
+IJ:e,d
+JK:e,d

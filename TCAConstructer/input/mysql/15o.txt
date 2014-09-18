@@ -1,0 +1,50 @@
+Constraints
+sys:ssl=1 & (libedit=0 > readline=1)
+t1:logbin=0 & !sqlmode=2
+t2:ndbcluster=0
+t3:innodb=0
+t4:!logformat=0 & logbin=0 & !sqlmode=2
+t5:!sqlmode=2
+t6:!extcharset=0 & !sqlmode=2
+t7:!logformat=1 & logbin=0 & ndbcluster=0
+t8:innodb=0 & logbin=0 & !sqlmode=2
+t9:logbin=0 & ndbcluster=0
+t10:!logformat=0 & innodb=0 & logbin=0 & !sqlmode=2
+t11:!logformat=0 & !extcharset=0 & logbin=0 & !sqlmode=2
+t12:federated=0 & logbin=0 & !sqlmode=2
+t13:innodb=0 & !sqlmode=2
+t14:ndbcluster=0 & !sqlmode=2
+t15:!logformat=1 & innodb=0 & logbin=0 & !sqlmode=2
+t16:blackhole=0 & logbin=0 & ndbcluster=0
+t17:archive=0 & !logformat=0 & logbin=0 & !sqlmode=2
+t18:federated=0 & innodb=0 & logbin=0 & !sqlmode=2
+t19:!logformat=0 & blackhole=0 & logbin=0 & !sqlmode=2
+t20:!logformat=1 & logbin=0 & ndbcluster=0 & !sqlmode=2
+t21:!extcharset=0 & logbin=0 & !sqlmode=2
+t22:logbin=0 & ndbcluster=0 & !sqlmode=2
+t23:!logformat=0 & logbin=0 & ndbcluster=0
+t24:!extcharset=0 & innodb=0 & !sqlmode=2
+t25:innodb=0 & logbin=0 & ndbcluster=0 
+t26:innodb=0 & ndbcluster=0
+t27:archive=0 & innodb=0
+t28:archive=0
+t29:logbin=0
+t30:!extcharset=2
+Test Cases
+t1,t2,t3,t4,t5,t6,t7,t8,t9,t10,t11,t12,t13,t14,t15,t16,t17,t18,t19,t20,t21,t22,t23,t24,t25,t26,t27,t28,t29,t30
+Options
+archive:0,1
+logformat:0,1,2
+blackhole:0,1
+ssl:0,1
+extcharset:0,1,2
+federated:0,1
+innodb:0,1
+libedit:0,1
+logbin:0,1
+ndbcluster:0,1
+readline:0,1
+sqlmode:0,1,2
+JJ:0,1
+KK:0,1
+LL:0,1

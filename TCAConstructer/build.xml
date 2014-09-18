@@ -1,0 +1,47 @@
+<project name="TCAConstructer" default="jar" basedir=".">
+
+	<property name="src" value="src" />
+	<property name="classes" value="classes" />
+	<property name="dist" value="dist" />
+	<property name="jar" value="${dist}/tcac.jar" />
+	<property name="implementation.title" value="Test Case-Aware Covering Array Constructor" />
+	
+	<tstamp>
+		<format property="TODAY" pattern="yyyy-MM-dd hh:mm:ss" />
+	</tstamp>
+
+	<target name="init" description="prepare the directories where classes, test results and distribution jars will be stored">
+		<tstamp />
+		<mkdir dir="${classes}" />
+		<mkdir dir="${dist}" />
+		<copy todir="${classes}">
+			<fileset dir="combinatoricslib-1.0" />
+		</copy>
+		<copy todir="${classes}">
+			<fileset dir="guava-13.0.1" />
+		</copy>
+	</target>
+
+	<target name="clean" description="delete all classes, test results and distribution jars including their directories">
+		<delete dir="${classes}" />
+		<delete dir="${dist}" />
+	</target>
+	<target name="compile" depends="clean, init" description="compile the sources">
+		<javac srcdir="${src}" destdir="${classes}" debug="true" />
+	</target>
+
+	<target name="jar" depends="compile" description="create jar package">
+		<tstamp prefix="jar">
+			<format property="datestamp" pattern="yyyy-MM-dd H:mm" />
+		</tstamp>
+		<jar destfile="${jar}" basedir="${classes}" includes="**/*.*">
+			<manifest>
+				<attribute name="Main-Class" value="base.TCAC" />
+				<attribute name="Implementation-Title" value="${implementation.title}" />
+				<attribute name="Built-By" value="Uğur Koç" />
+				<attribute name="Built-Date" value="${TODAY}" />
+				<attribute name="Contributors" value="Cemal Yılmaz" />
+			</manifest>
+		</jar>
+	</target>
+</project>

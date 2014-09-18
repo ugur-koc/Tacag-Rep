@@ -1,0 +1,18 @@
+Constraints
+sys:EE=EE2 | AA=AA1 & JJ=JJ1
+t1: HH=HH1
+t2: II=II1
+Test Cases
+t1,t2,t3,t4,t5,t6
+Options
+AA:AA1,AA2
+BB:BB1,BB2
+CC:CC1,CC2
+DD:DD1,DD2
+EE:EE1,EE2
+FF:FF1,FF2
+GG:GG1,GG2
+HH:HH1,HH2
+II:II1,II2
+JJ:JJ1,JJ2
+

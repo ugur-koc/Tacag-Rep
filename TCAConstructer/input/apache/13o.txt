@@ -1,0 +1,35 @@
+Constraints
+sys:proxyhttp=e > proxy=e
+t1:ssl=e & proxyhttp=e
+t2:ssl=e
+t3:rewrite=e
+t4:headers=e
+t5:proxy=e
+t6:dav=e
+t7:casefilter=e
+t8:vhostalias=e
+t9:proxyhttp=e
+t10:proxy=e & rewrite=e & cgi=e
+t11:echo=e
+t12:ssl=e & headers=e
+t13:rewrite=e & proxy=e
+t14:ssl=e & casefilterin=e
+t15:casefilterin=e
+t16:bucketeer=e
+t17:info=e
+Test Cases
+t1,t2,t3,t4,t5,t6,t7,t8,t9,t10,t11,t12,t13,t14,t15,t16,t17,t18
+Options
+casefilter:e,d
+ssl:e,d
+dav:e,d
+echo:e,d
+rewrite:e,d
+casefilterin:e,d
+bucketeer:e,d
+info:e,d
+headers:e,d
+vhostalias:e,d
+cgi:e,d
+proxyhttp:e,d
+proxy:e,d
