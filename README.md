@@ -1,4 +1,4 @@
-Tacag-Test case Aware Covering Array Generator
+Tacag - Test case Aware Covering Array Generator
 =========
 
 Tacag is a (test case aware-) covering array generator.
